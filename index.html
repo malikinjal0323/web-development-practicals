@@ -1,236 +1,474 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ophelia | Home</title>
 
-    
-<link rel="icon" type="image/jpeg" href="j1.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg"
+          href="https://malikinjal0323.github.io/web-development-practicals/j1.jpg">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-brand {
+            letter-spacing: 1px;
+        }
+
+        .sale-banner {
+            background-color: #d4af37;
+            color: #171717;
+            padding: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .welcome-title {
+            text-align: center;
+            margin: 35px 0 10px;
+            color: #333;
+        }
+
+        .welcome-text {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        #ophelia_jewels {
+            margin: 0 auto 35px;
+            max-width: 1200px;
+        }
+
+        #ophelia_jewels .carousel-item {
+            padding: 10px 45px;
+        }
+
+        .jewel-image {
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: contain;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .collection-heading {
+            color: burlywood;
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .card {
+            height: 100%;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 230px;
+            object-fit: contain;
+            background: white;
+        }
+
+        .btn-peach {
+            background-color: peachpuff;
+            color: #222;
+            border: 1px solid #e6bfa7;
+        }
+
+        .btn-peach:hover {
+            background-color: #e6bfa7;
+            color: #222;
+        }
+
+        footer {
+            margin-top: 40px;
+        }
+
+        @media (max-width: 767px) {
+            #ophelia_jewels .carousel-item {
+                padding: 10px 35px;
+            }
+
+            .jewel-image {
+                height: 260px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-light">
+<body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-               
-<img src="j1.jpg" alt="Logo" width="50" height="50"
-     class="me-2 rounded-circle">
+
+            <a class="navbar-brand fw-bold d-flex align-items-center"
+               href="index.html">
+
+                <img
+                    src="https://malikinjal0323.github.io/web-development-practicals/j1.jpg"
+                    alt="Ophelia Jewels Logo"
+                    width="50"
+                    height="50"
+                    class="me-2 rounded-circle">
 
                 Ophelia Jewels
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar"
+                    aria-controls="navbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
 
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar">
 
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
 
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">HOME</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">CONTACT</a>
+                        <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
 
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-        MORE
-    </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           id="moreDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            MORE
+                        </a>
 
-    <ul class="dropdown-menu" aria-labelledby="moreDropdown">
-        <li><a class="dropdown-item" href="gold.html">Gold Jewellery</a></li>
-        <li><a class="dropdown-item" href="silver.html">Silver Jewellery</a></li>
-        <li><a class="dropdown-item" href="pearls.html">Pearl Jewellery</a></li>
-    </ul>
-</li>
+                        <ul class="dropdown-menu"
+                            aria-labelledby="moreDropdown">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="ABU.html">ABOUT US</a>
+                            <li>
+                                <a class="dropdown-item" href="gold.html">
+                                    Gold Jewellery
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="silver.html">
+                                    Silver Jewellery
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="pearls.html">
+                                    Pearl Jewellery
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="jewel.html">
+                                    All Jewellery
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
-                        <button class="btn btn-outline-light ms-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <a class="nav-link" href="ABU.html">ABOUT US</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ms-lg-2"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#loginModal">
                             Login
                         </button>
                     </li>
 
                 </ul>
-
             </div>
-
         </div>
     </nav>
 
+    <!-- SALE BANNER -->
+    <div class="sale-banner">
+        ✨ BIG SALE — FLAT 10% OFF ON NEW ARRIVALS ✨
+    </div>
 
-    <div id="ophelia_jewels" class="carousel slide" data-bs-ride="carousel">
+    <!-- WELCOME -->
+    <div class="container">
+        <h1 class="welcome-title">Welcome to Ophelia Jewels</h1>
+
+        <p class="welcome-text">
+            Discover beautiful jewellery for every special occasion.
+        </p>
+    </div>
+
+    <!-- JEWELLERY CAROUSEL -->
+    <div id="ophelia_jewels"
+         class="carousel slide"
+         data-bs-ride="carousel"
+         data-bs-interval="3500">
 
         <div class="carousel-inner">
 
-
-
+            <!-- SLIDE 1 -->
             <div class="carousel-item active">
-                <div class="d-flex justify-content-center gap-2">
-                    <img src="j8.jpg" class="img-fluid" style="width: 500px; height: 500px;">
-                    <img src="j9.jpg" class="img-fluid" style="width: 500px; height: 500px;">
-                    <img src="j1.jpg" class="img-fluid" style="width: 500px; height: 500px;">
+                <div class="row g-3 justify-content-center">
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j8.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 1">
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j9.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 2">
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j1.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 3">
+                    </div>
+
                 </div>
             </div>
 
+            <!-- SLIDE 2 -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center gap-2">
-                    <img src="j2.jpg" class="img-fluid" style="width: 500px; height: 500px;">
-                    <img src="j3.jpg" class="img-fluid" style="width: 500px; height: 500px;">
-                    <img src="j4.jpg" class="img-fluid" style="width: 500px; height: 500px;">
+                <div class="row g-3 justify-content-center">
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j2.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 4">
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j3.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 5">
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j4.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 6">
+                    </div>
+
                 </div>
             </div>
 
+            <!-- SLIDE 3 -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center gap-2">
-                    <img src="j5.jpg" class="img-fluid" style="width: 500px; height: 500px;">
-                    <img src="j6.jpg" class="img-fluid" style="width: 500px; height: 500px;">
-                    <img src="j7.jpg" class="img-fluid" style="width: 500px; height: 500px;">
+                <div class="row g-3 justify-content-center">
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j5.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 7">
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j6.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 8">
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <img
+                            src="https://malikinjal0323.github.io/web-development-practicals/j7.jpg"
+                            class="jewel-image"
+                            alt="Jewellery collection 9">
+                    </div>
+
                 </div>
             </div>
 
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#ophelia_jewels" data-bs-slide="prev">
+        <!-- PREVIOUS BUTTON -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#ophelia_jewels"
+                data-bs-slide="prev">
 
-            <span class="carousel-control-prev-icon"></span>
+            <span class="carousel-control-prev-icon"
+                  aria-hidden="true"></span>
 
+            <span class="visually-hidden">Previous</span>
         </button>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#ophelia_jewels" data-bs-slide="next">
+        <!-- NEXT BUTTON -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#ophelia_jewels"
+                data-bs-slide="next">
 
-            <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon"
+                  aria-hidden="true"></span>
 
+            <span class="visually-hidden">Next</span>
         </button>
 
+        <!-- INDICATORS -->
+        <div class="carousel-indicators">
+
+            <button type="button"
+                    data-bs-target="#ophelia_jewels"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+
+            <button type="button"
+                    data-bs-target="#ophelia_jewels"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+
+            <button type="button"
+                    data-bs-target="#ophelia_jewels"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+
+        </div>
     </div>
 
-
+    <!-- SALE MESSAGE -->
     <div class="container mt-4">
-
         <div class="alert alert-warning text-center">
-
-            <strong>Big Sale!</strong>
+            <strong>Big Sale!</strong><br>
             Flat 10% OFF on New Arrivals.
-
         </div>
-
     </div>
 
-
+    <!-- COLLECTION CARDS -->
     <div class="container my-5">
 
-        <h2 class="text-center mb-4" style="color:burlywood;">
-            Our Fresh Collection
-        </h2>
+        <h2 class="collection-heading">Our Fresh Collection</h2>
 
-        <div class="row">
+        <div class="row g-4">
 
+            <!-- GOLD -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card">
 
-            <div class="col-md-4 mb-4">
-
-                <div class="card shadow">
-
-                    <img src="images\gold.jpg" class="card-img-top">
+                    <img
+                        src="https://malikinjal0323.github.io/web-development-practicals/j2.jpg"
+                        class="card-img-top"
+                        alt="Gold jewellery">
 
                     <div class="card-body text-center">
+                        <h5 class="card-title">Gold Jewellery</h5>
 
-                        <h5 class="card-title">
-                            Gold Jwellery
-                        </h5>
+                        <p class="card-text">
+                            Discover elegant jewellery designs.
+                        </p>
 
-                        <a href="#" class="btn" style="background:peachpuff;">
+                        <a href="gold.html" class="btn btn-peach">
                             See More
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
 
+            <!-- SILVER -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card">
 
-            <div class="col-md-4 mb-4">
-
-                <div class="card shadow">
-
-                    <img src="images\silver.jpg" class="card-img-top">
+                    <img
+                        src="https://malikinjal0323.github.io/web-development-practicals/j3.jpg"
+                        class="card-img-top"
+                        alt="Silver jewellery">
 
                     <div class="card-body text-center">
+                        <h5 class="card-title">Silver Jewellery</h5>
 
-                        <h5 class="card-title">
-                            Silver Jwellery
-                        </h5>
+                        <p class="card-text">
+                            Explore beautiful silver designs.
+                        </p>
 
-                        <a href="#" class="btn" style="background:peachpuff;">
+                        <a href="silver.html" class="btn btn-peach">
                             See More
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
 
+            <!-- PEARLS -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card">
 
-            <div class="col-md-4 mb-4">
-
-                <div class="card shadow">
-
-                    <img src="images\pearls.jpg" class="card-img-top">
+                    <img
+                        src="https://malikinjal0323.github.io/web-development-practicals/j4.jpg"
+                        class="card-img-top"
+                        alt="Pearl jewellery">
 
                     <div class="card-body text-center">
+                        <h5 class="card-title">Pearl Jewellery</h5>
 
-                        <h5 class="card-title">
-                            Pearl Jwellery
-                        </h5>
+                        <p class="card-text">
+                            Find timeless pearl designs.
+                        </p>
 
-                        <a href="#" class="btn" style="background:peachpuff;">
+                        <a href="pearls.html" class="btn btn-peach">
                             See More
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
 
         </div>
-
     </div>
 
-
-    <nav>
-
+    <!-- PAGINATION -->
+    <nav aria-label="Collection pages">
         <ul class="pagination justify-content-center mb-5">
 
             <li class="page-item disabled">
-                <a class="page-link">Previous</a>
+                <span class="page-link">Previous</span>
+            </li>
+
+            <li class="page-item active">
+                <a class="page-link" href="index.html">1</a>
             </li>
 
             <li class="page-item">
-                <a class="page-link" href="gold.html">1</a>
+                <a class="page-link" href="gold.html">2</a>
             </li>
 
             <li class="page-item">
-                <a class="page-link" href="silver.html">2</a>
-            </li>
-
-            <li class="page-item">
-                <a class="page-link" href="pearls.html">3</a>
+                <a class="page-link" href="silver.html">3</a>
             </li>
 
             <li class="page-item">
@@ -238,78 +476,116 @@
             </li>
 
         </ul>
-
     </nav>
 
-
+    <!-- FOOTER -->
     <footer class="bg-dark text-white text-center p-4">
 
         <h5>Ophelia Jewels</h5>
 
-        <p>
-            <a href="index.html" class="text-white text-decoration-none">Home |</a>
-            <a href="contact.html" class="text-white text-decoration-none">Contact |</a>
-            <a href="#" class="text-white text-decoration-none">Instagram</a>
+        <p class="mb-2">
+            Timeless beauty. Elegant designs.
+        </p>
+
+        <p class="mb-0">
+            <a href="index.html"
+               class="text-white text-decoration-none">Home</a>
+            |
+            <a href="contact.html"
+               class="text-white text-decoration-none">Contact</a>
+            |
+            <a href="ABU.html"
+               class="text-white text-decoration-none">About Us</a>
+        </p>
+
+        <p class="mt-3 mb-0">
+            &copy; 2026 Ophelia Jewels. All rights reserved.
         </p>
 
     </footer>
 
-<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+    <!-- LOGIN MODAL -->
+    <div class="modal fade"
+         id="loginModal"
+         tabindex="-1"
+         aria-labelledby="loginModalTitle"
+         aria-hidden="true">
 
-            <div class="modal-header bg-dark text-white">
-                <h5 class="modal-title">Ophelia Jewels</h5>
-                <button type="button" class="btn-close btn-close-white"
-                    data-bs-dismiss="modal"></button>
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header bg-dark text-white">
+
+                    <h5 class="modal-title" id="loginModalTitle">
+                        Ophelia Jewels
+                    </h5>
+
+                    <button type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body p-4">
+
+                    <h3 class="text-center mb-3">Welcome Back!</h3>
+
+                    <p class="text-center text-muted">
+                        Login to continue shopping.
+                    </p>
+
+                    <form onsubmit="event.preventDefault(); alert('Demo login only. No account was created.');">
+
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">
+                                Email Address
+                            </label>
+
+                            <input type="email"
+                                   id="loginEmail"
+                                   class="form-control"
+                                   placeholder="Enter your email"
+                                   required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">
+                                Password
+                            </label>
+
+                            <input type="password"
+                                   id="loginPassword"
+                                   class="form-control"
+                                   placeholder="Enter your password"
+                                   required>
+                        </div>
+
+                        <button type="submit"
+                                class="btn btn-dark w-100">
+                            Login
+                        </button>
+
+                    </form>
+
+                    <hr>
+
+                    <p class="text-center mb-0">
+                        Don't have an account?
+                        <a href="contact.html"
+                           class="text-decoration-none">
+                            Contact Us
+                        </a>
+                    </p>
+
+                </div>
             </div>
-
-            <div class="modal-body p-4">
-
-                <h3 class="text-center mb-3">Welcome Back</h3>
-                <p class="text-center text-muted">
-                    Login to continue shopping
-                </p>
-
-                <form>
-
-                    <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input type="email"
-                               class="form-control"
-                               placeholder="Enter your email"
-                               required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Password</label>
-                        <input type="password"
-                               class="form-control"
-                               placeholder="Enter your password"
-                               required>
-                    </div>
-
-                    <button class="btn btn-dark w-100">
-                        Login
-                    </button>
-
-                </form>
-
-                <hr>
-
-                <p class="text-center">
-                    Don't have an account?
-                    <a href="#" class="text-decoration-none">
-                        Register
-                    </a>
-                </p>
-
-            </div>
-
         </div>
     </div>
-</div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
